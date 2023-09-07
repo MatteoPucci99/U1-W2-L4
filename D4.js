@@ -76,6 +76,8 @@ const epify = function (str) {
   }
 };
 
+console.log(epify("epicode è una bella scuola"));
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 6
@@ -86,10 +88,12 @@ const epify = function (str) {
 const check3and7 = function (n) {
   if (n % 3 === 0 || n % 7 === 0) {
     return true;
+  } else {
+    return false;
   }
 };
 
-console.log(check3and7(14));
+console.log(check3and7(2));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -147,7 +151,7 @@ const giveMeRandom = function (n) {
   const numbers = [];
 
   for (let i = 0; i < n; i++) {
-    const randomNumber = Math.ceil(Math.random() * 10);
+    const randomNumber = Math.floor(Math.random() * 11);
     numbers.push(randomNumber);
   }
   return numbers;
