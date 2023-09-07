@@ -147,7 +147,7 @@ const giveMeRandom = function (n) {
   const numbers = [];
 
   for (let i = 0; i < n; i++) {
-    const randomNumber = Math.ceil(Math.random * 10);
+    const randomNumber = Math.ceil(Math.random() * 10);
     numbers.push(randomNumber);
   }
   return numbers;
